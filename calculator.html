@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>calc</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="calculator.js"></script>
+</head>
+
+<body>
+<div class="calculator">
+    <form class="calculator__form">
+        <!-- 1ST ROW -->
+        <div class="calculator__row">
+            <p id="hidden" onclick="hide()">Perimeter:</p>
+            <label for="display"></label><input class="calculator__display" id="display" type="text" disabled="">
+        </div>
+        <!-- 2ND ROW -->
+        <div class="calculator__row">
+            <p id="hidden2" onclick="hide()">Area:</p>
+            <label for="display2"></label><input class="calculator__display2" id="display2" type="text">
+        </div>
+        <!-- 3RD ROW -->
+        <div class="calculator__row">
+            <button type="button" value="c" class="calculator__key calculator__clear">c</button>
+            <button type="button" value="<--" class="calculator__key calculator__backspace"><--</button>
+            <button type="button" value="^2" class="calculator__key calculator__power">^2</button>
+            <button type="button" value="/" class="calculator__key calculator__button">/</button>
+        </div>
+        <!-- 4TH ROW -->
+        <div class="calculator__row">
+            <button type="button" value="7" class="calculator__key calculator__button">7</button>
+            <button type="button" value="8" class="calculator__key calculator__button">8</button>
+            <button type="button" value="9" class="calculator__key calculator__button">9</button>
+            <button type="button" value="*" class="calculator__key calculator__button">*</button>
+        </div>
+        <!-- 5TH ROW -->
+        <div class="calculator__row">
+            <button type="button" value="4" class="calculator__key calculator__button">4</button>
+            <button type="button" value="5" class="calculator__key calculator__button">5</button>
+            <button type="button" value="6" class="calculator__key calculator__button">6</button>
+            <button type="button" value="-" class="calculator__key calculator__button">-</button>
+        </div>
+        <!-- 6TH ROW -->
+        <div class="calculator__row">
+            <button type="button" value="1" class="calculator__key calculator__button">1</button>
+            <button type="button" value="2" class="calculator__key calculator__button">2</button>
+            <button type="button" value="3" class="calculator__key calculator__button">3</button>
+            <button type="button" value="+" class="calculator__key calculator__button">+</button>
+        </div>
+        <!-- 7TH ROW -->
+        <div class="calculator__row">
+            <button type="button" value="0" class="calculator__key calculator__button">0</button>
+            <button type="button" value="." class="calculator__key calculator__button">.</button>
+            <button type="button" value="=" class="calculator__key calculator__key--equal">=</button>
+        </div>
+        <!-- 8TH ROW -->
+        <div class="calculator__row">
+            <button type="button" value="&#9632;" class="calculator__key calculator__square">&#9632;</button>
+            <button type="button" value="&#9644;" class="calculator__key calculator__rectangle">&#9644;</button>
+            <button type="button" value="&#9679;" class="calculator__key calculator__circle">&#9679;</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
